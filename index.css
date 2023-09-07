@@ -1,0 +1,184 @@
+.form-inline{
+    display: flex;
+}
+.logo img{
+    display: flex;
+    max-width: 100px;
+    
+}
+.navbar-nav mr-auto{
+    display: flex;
+}
+.nav-item{
+    padding-left: 15px;
+}
+.about{
+    text-align: center;
+}
+.frontimg {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 100vh; 
+}
+
+.frontimg img {
+    width: 95%; 
+    height: 80%; 
+}
+
+p{
+    font-family:  Impact;
+    font-size: 80px;
+    color: black;
+}
+.just h5{
+    margin-top:150px ;
+
+}
+.shop{
+    background-color: black;
+    padding: 10px 20px 10px 20px;
+    color: white;
+    margin-left: 48% ;
+    border-radius: 30%;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    position: relative;
+    display: flex;
+}
+
+.container img {
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 80%;
+    left: 20%;
+   
+}
+
+.overlay h2 {
+    font-size: 16px;
+    margin: 0;
+}
+
+.overlay p {
+    font-size: 16px;
+    margin: 0;
+}
+
+.overlay2 {
+    position: absolute;
+    top: 80%;
+    left: 20%;
+}
+
+.overlay2 h2 {
+    font-size: 16px;
+    margin: 0;
+    color: black;
+}
+
+.overlay2 p {
+    font-size: 16px;
+    margin: 0;
+}
+
+.container2{
+    position: relative;
+    display: flex;
+    margin-left: 5%;
+}
+
+.container2 img {
+    width: 100%;
+    height: auto;
+}
+
+.over {
+    position: absolute;
+    top: 80%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    border-radius: 10px;
+}
+
+.over button {
+    font-size: 15px;
+    margin: 0;
+    background-color: white;
+    border-radius: 20%;
+    color: black;
+}
+.over2 {
+    position: absolute;
+    top: 80%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    border-radius: 10px;
+}
+.over2 button {
+    
+    font-size: 15px;
+    margin-left: 10px;
+    background-color: white;
+    border-radius: 20%;
+}
+.over3 {
+    position: absolute;
+    top: 80%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    text-align: center;  
+    border-radius: 10px;
+}
+.over3 button {
+    font-size: 15px;
+    margin: 0;
+    background-color: white;
+    border-radius: 20%;
+}
+.mb-4 img{
+    width: 50px;
+    height: 50px;
+}
+.relative{
+    margin-left: 2%;
+}
+/* Hide the original products when filtered products are displayed */
+.container {
+    display: none;
+}
+
+/* Display the filtered products container */
+.filtered-products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* Style for filtered product buttons */
+.filtered-products .over button {
+    font-size: 15px;
+    margin: 0;
+    background-color: white;
+    border-radius: 20%;
+}

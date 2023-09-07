@@ -1,0 +1,12 @@
+{
+    "searchBar": {
+      "placeholder": "Search for Nike products...",
+      "searchEndpoint": "/api/search", 
+      "searchMethod": "GET",
+      "searchQueryParam": "query", 
+      "searchDelay": 300, 
+      "minQueryLength": 3, 
+      "debounceTime": 500 }
+
+  }
+  

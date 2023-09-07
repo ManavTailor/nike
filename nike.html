@@ -1,0 +1,213 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="stylesheet" href="index.css"> 
+    <style>
+        .footer {
+            background-color: #000;
+            color: #fff;
+        }
+
+        /* Add a media query for screens with a maximum width of 768px */
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .navbar-toggler {
+                display: block;
+            }
+
+            .hidden.md\:block {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <script src="script.js" defer></script>
+    <div id="myfilter">
+        <nav class="bg-light">
+            <div class="flex items-center justify-between navbar bg-gray-200"> 
+                <div class="logo">
+                    <img src="images/nlogo.png" class="max-w-20">
+                </div>
+                <button class="navbar-toggler md:hidden" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="hidden md:block">
+                    <ul class="flex"> 
+                        <li class="mr-6">
+                            <a class="text-black" href="#">New & Featured</a>
+                        </li>
+                        <li class="mr-6">
+                            <a class="text-black" href="#">Men</a>
+                        </li>
+                        <li class="mr-6">
+                            <a class="text-black" href="#">Women</a>
+                        </li>
+                        <li class="mr-6">
+                            <a class="text-black" href="#">Kids</a>
+                        </li>
+                        <li class="mr-6">
+                            <a class="text-black" href="#">Sale</a>
+                        </li>
+                        <li class="mr-">
+                            <a class="text-black" href="#">SNKRS</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="hidden md:block">
+                    <nav class="navbar bg-light gap-20">
+                        <form class="flex items-center">
+                            <input class="form-input mr-2" 
+                            type="search" 
+                            placeholder="Search" 
+                            aria-label="Search" 
+                            id="find" 
+                            > 
+                        </form>
+                    </nav>
+                </div>
+            </div>
+        </nav>
+        <div class="filtered-products">
+            <!-- Filtered products will be displayed here -->
+        </div>
+    <div>
+        <div class="about text-center">
+            <h3>Hello Nike</h3>
+            <h6>Download the app to access everything Nike. <span class="underline">Get Your Great</span></h6>
+        </div>
+        <div class="frontimg flex items-center justify-center h-screen">
+            <img src="images/nike.png" class="w-95 h-80">
+        </div>
+        <div class="about text-center">
+            <h5>Just In</h5>
+            <p>NIKE READY PACK</p>
+            <h5>The season is here. Start yours prepared with the best in touch, agility, precision, and speed.</h5>
+        </div>
+        <button class="shop bg-black text-white mx-auto mt-8 p-2 rounded-full">Shop All</button>
+        <div class="just mt-8">
+            <h5><span class="text-xl ml-4 pb-4">The Essential</span></h5>
+        </div>
+        <br>
+        <div class="video-container">
+            <video width="100%" autoplay loop muted>
+                <source src="video/nikestr.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="about text-center">
+            <p>NIKE STRUCTURE 25</p>
+            <h5>Stability where you need it, cushion where you want it.</h5>
+        </div>
+        <button class="shop bg-black text-white mx-auto mt-8 p-2 rounded-full">Shop</button>
+        <div class="just mt-8">
+            <h5><span class="text-xl ml-4">Trending</span></h5>
+        </div>
+        <br>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 md:gap-8">
+            <div class="relative">
+                <img src="images/trending1.png" class="w-full">
+                <div class="overlay absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center p-4rounded-lg text-2xl">
+                    <h2>Dropping on App 31 August</h2>
+                    <p >Vaphorfly Next%3 EK</p>
+                </div>
+            </div>
+            <div class="relative">
+                <img src="images/trending2.png" class="w-full">
+                <div class="overlay2 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center p-4 rounded-lg">
+                    <h2 class="text-xl">Icon Made Fresh</h2>
+                    <p>Nike Killshot 2 Leather</p>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="just mt-8">
+            <h5><span class="text-xl ml-4 pb-4">The Essential</span></h5>
+        </div> -->
+        <br>
+        
+        
+        <div class="container" id="product-container">
+            <!-- <div class="relative card">
+                <img src="images/essen1.jpg" class="w-full">
+                <div class="over absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white rounded-lg">
+                    <button class="text-black bg-white border rounded-full px-4 py-2">Men</button>
+                </div>
+            </div>
+            <div class="relative card">
+                <img src="images/wessen.jpg" class="w-full">
+                <div class="over2 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white rounded-lg">
+                    <button class="text-black bg-white border rounded-full px-4 py-2 pl-5">Women</button>
+                </div>
+            </div>
+            <div class="relative card">
+                <img src="images/kessen.jpg" class="w-full">
+                <div class="over3 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white rounded-lg">
+                    <button class="text-black bg-white border rounded-full px-4 py-2">Kid</button>
+                </div>
+            </div> -->  
+        </div>
+    </div>
+</div>
+<br>
+    
+<footer class="footer py-8">
+
+    <div class="container1 mx-auto text-center flex justify-between">
+        <div class="mb-4">
+            <img src="images/fogo.jpg" alt="Nike Logo" class="mx-auto w-32">
+        </div>
+        <p class="text-sm text-white pr-4">© 2023 Nike Shoes. All rights reserved.</p>
+        
+    </div>
+    <div class="p-3">
+        <div class="container1">
+            <div class="grid grid-cols-3 ">
+                <div class="col-span-1 p-4">
+                    <p class="text-sm text-white ml-16">Find A Store</p>
+                </div>
+                <div class="col-span-1 p-4">
+                    <p class="text-sm text-white ml-16">Get Help</p>
+                </div>
+                <div class="col-span-1 p-4">
+                    <p class="text-sm text-white ml-16">About Nike</p>
+                </div>
+                <div class="col-span-1 p-3">
+                    <p class="text-sm text-white ml-16 ">Become A Seller</p>
+                </div>
+                <div class="col-span-1 p-3">
+                    <h5 class="text-sm text-white ml-16">Order Status</h5>
+                </div>
+                <div class="col-span-1 p-3">
+                    <h5 class="text-sm text-white ml-16">News</h5>
+                </div>
+                <div class="col-span-1 p-3">
+                    <p class="text-sm text-white ml-16">Student Discount</p>
+                </div>
+                <div class="col-span-1 p-3">
+                    <h5 class="text-sm text-white ml-16">Delivery</h5>
+                </div>
+                <div class="col-span-1 p-3">
+                    <h5 class="text-sm text-white ml-16">Career</h5>
+                </div>
+                <div class="col-span-1 p-3">
+                    <p class="text-sm text-white ml-16">Send Us Feedback</p>
+                </div>
+                <div class="col-span-1 p-4">
+                    <h5 class="text-sm text-white ml-16">Return</h5>
+                </div>
+                
+            </div>
+        </div>
+    
+</footer>
+</div>
+
+</body>
+</html>
