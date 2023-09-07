@@ -10,22 +10,34 @@
             background-color: #000;
             color: #fff;
         }
+        /* Default styles for larger screens */
+.navbar {
+    flex-direction: row;
+    /* ... other styles ... */
+}
 
-        /* Add a media query for screens with a maximum width of 768px */
-        @media (max-width: 768px) {
-            .navbar {
-                flex-direction: column;
-                text-align: center;
-            }
+.navbar-toggler {
+    display: none;
+}
 
-            .navbar-toggler {
-                display: block;
-            }
+/* Media query for screens with a maximum width of 768px (small screens) */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+        font-size: 10px;
+        /* ... other mobile styles ... */
+    }
 
-            .hidden.md\:block {
-                display: none;
-            }
-        }
+    .navbar-toggler {
+        display: block;
+    }
+
+    .hidden.md\:block {
+        display: none;
+    }
+}
+
     </style>
 </head>
 <body>
